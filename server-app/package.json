@@ -2,11 +2,11 @@
   "name": "url-shortner-api",
   "version": "1.0.0",
   "description": "Project for url-shortner APIs.",
-  "type": "module",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "build": "npx tsc",
+    "start": "npx tsc && node ./dist/server.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,13 @@
     "express": "^4.19.2",
     "mongoose": "^8.5.2",
     "nanoid": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^22.1.0",
+    "nodemon": "^3.1.4",
+    "typescript": "^5.5.4"
   }
 }
