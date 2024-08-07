@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc",
-    "start": "npx tsc && node ./dist/server.js"
+    "start": "npx tsc && node ./dist/server.js",
+    "dev": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "@types/mongoose": "^5.11.97",
     "@types/node": "^22.1.0",
     "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
   }
 }
